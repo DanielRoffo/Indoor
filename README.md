@@ -7,5 +7,5 @@ La idea es retomarlo o rearmarlo de cero después de realizar los trabajos que m
 
 Dejo unas fotos del progreso hasta ahora
 
-![img de inicio](signup.png)
+![img](foto.png)
 
