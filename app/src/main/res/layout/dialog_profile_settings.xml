@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="?attr/colorOnBackground">
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cremita_principal"
+        android:hint="Set new username"
+        android:gravity="center"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/changeUsername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:backgroundTint="@color/cremita_principal"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="20dp"
+        android:text="Change Username" />
+
+    <Button
+        android:id="@+id/changeImage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:padding="20dp"
+        android:backgroundTint="@color/cremita_principal"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Change Image"/>
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
+        android:textSize="18dp"
+        android:padding="20dp"
+        android:backgroundTint="@color/cremita_principal"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Go back"/>
+
+
+
+</LinearLayout>

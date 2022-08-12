@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">House Of Plants</string>
+    <string name="title_active_login">House Of Plants</string>
+    <string name="IntroOne">Welcome to </string>
+    <string name="IntroTwo">House Of Plants</string>
+    <string name="PressMe">Press Me</string>
+    <string name="password">Password</string>
+    <string name="new_password">New Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="name">Full name</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="repeat_password">Confirm password</string>
+    <string name="signup">Sign Up</string>
+    <string name="text_signup">Don\'t have an account?</string>
+    <string name="link_signup">Sign up</string>
+    <string name="all">TODO</string>
+    <string name="user_email">userdefault@gmail.com</string>
+    <string name="user_name">User Default</string>
+    <string name="update_profile">Save</string>
+    <string name="delete_account">Delete account</string>
+    <string name="change_password">Change password</string>
+    <string name="forget_password">forgot your password?</string>
+    <string name="title_check_email">Email Verification</string>
+    <string name="subtitle_check_email">To complete your registration, please verify your email address and then click continue.</string>
+    <string name="continue_check_email">Continue</string>
+    <string name="title_account_recovery">Account recovery</string>
+    <string name="subtitle_account_recovery">Enter your email address so we can send you an email with the steps to change your password.</string>
+    <string name="recovery_account">Send</string>
+    <string name="title_update_password">Change password</string>
+    <string name="subtitle_update_password">For security reasons to change your password, you must first enter your current password.</string>
+    <string name="title_delete_account">Delete account</string>
+    <string name="subtitle_delete_account">For security reasons to delete your account completely, you must enter your password.</string>
+    <string name="delete">Delete</string>
+    <string name="title_temperature">DHT11 temperature</string>
+    <string name="subtitle_temperature">Firebase Kotlin</string>
+    <string name="title_humidity">DHT11 humidity</string>
+    <string name="subtitle_humidity">Firebase Kotlin</string>
+    <string name="value_temperature">temperature: 25.34 C°</string>
+    <string name="value_humidity">humidity: 40%</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="channel_name">House Of Plants</string>
+    <string name="channel_description">Notifications</string>
+    <string name="default_notification_channel_id">channelID_1</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetNewParametersActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/line1_t"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="General Information"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="20sp"
+                            android:padding="16dp"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/arrow1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="15dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line1_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/light_grey"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandable_layout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/cremita_principal_mas_claro"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:text="Plant name:"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/plantName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:maxLength="25" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="Time before harvesting:"
+                                android:textColor="@color/dark_card"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp">
+
+
+                                <EditText
+                                    android:id="@+id/harvestTimeDays"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="2" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:layout_weight="10"
+                                    android:text="Days"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+                                <EditText
+                                    android:id="@+id/harvestTimeMonths"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="2" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:layout_weight="15"
+                                    android:text="Months"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+                                <EditText
+                                    android:id="@+id/harvestTimeYears"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="4" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:text="Years"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Substrate of choice:"
+                                android:textColor="@color/dark_card"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/substrate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="250"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fertilizers of choice:"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textColor="@color/dark_card"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/fertilizers"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="250"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pesticides and common pests:"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textColor="@color/dark_card"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/pesticides"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="250"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Description:"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textColor="@color/dark_card"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="500"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/line1_b"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+            <View
+                android:id="@+id/line2_t"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Temperature"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="20sp"
+                            android:padding="16dp"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/arrow2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="15dp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line2_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/light_grey"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandable_layout_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/cremita_principal_mas_claro"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:padding="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:text="Min Temperature (Day)"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/MinTempDay"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="2"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="°C"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/light_grey"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:text="Max Temperature (Day)"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/MaxTempDay"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="2"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="°C"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/light_grey"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:text="Min Temperature (Night)"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/MinTempNight"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="2"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="°C"
+                                    android:textColor="@color/dark_card"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/light_grey"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:text="Max Temperature (Night)"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/MaxTempNight"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="2"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="°C"
+                                    android:textColor="@color/dark_card"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/line2_b"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+            <View
+                android:id="@+id/line3_t"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Humidity"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="20sp"
+                            android:padding="16dp"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/arrow3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="15dp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line3_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/light_grey"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandable_layout_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/cremita_principal_mas_claro"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:padding="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:text="Min Humidity (Day)"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/MinHumDay"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="3"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="%"
+                                    android:gravity="center"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/light_grey"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:text="Max Humidity (Day)"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/MaxHumDay"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="3"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="%"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:gravity="center"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/light_grey"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:text="Min Humidity (Night)"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/MinHumNight"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="3"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="%"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:gravity="center"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/light_grey"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:text="Max Humidity (Night)"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/MaxHumNight"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="3"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:gravity="center"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:text="%"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/line3_b"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+
+            <View
+                android:id="@+id/line4_t"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Photoperiod"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="20sp"
+                            android:padding="16dp"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/arrow4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="15dp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line4_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/light_grey"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandable_layout_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/cremita_principal_mas_claro"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="Start of daylight"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/dayStartTimeHour"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLength="2" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:text=":"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+                                <EditText
+                                    android:id="@+id/dayStartTimeMin"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLength="2"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="Hrs"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/light_grey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="End of daylight"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/nightStartTimeHour"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text=":"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12dp" />
+
+                                <EditText
+                                    android:id="@+id/nightStartTimeMin"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLength="2"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:layout_weight="10"
+                                    android:text="Hrs"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/line4_b"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+
+            <View
+                android:id="@+id/line5_t"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ventilation"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textSize="20sp"
+                            android:padding="16dp"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/arrow5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="15dp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line5_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/light_grey"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandable_layout_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/cremita_principal_mas_claro"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:text="Ventilation time"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/ventTime"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLength="4" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="Min"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp"
+                                    />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/light_grey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:text="Ventilation intervals"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/ventIntervals"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLength="4" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="Min"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/line5_b"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+
+            <View
+                android:id="@+id/line6_t"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Irrigation"
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:padding="16dp"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/arrow6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="15dp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line6_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/light_grey"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandable_layout_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/cremita_principal_mas_claro"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Irrigation days"
+                                android:textColor="@color/dark_card"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textSize="16sp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/monday"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp"
+                                    android:backgroundTint="@color/light_grey"
+                                    android:layout_marginEnd="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mo"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/white"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="sans-serif-smallcaps"
+                                        android:textAlignment="center"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/tuesday"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp"
+                                    android:backgroundTint="@color/light_grey"
+                                    android:layout_marginEnd="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tu"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/white"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="sans-serif-smallcaps"
+                                        android:textAlignment="center"
+                                        />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/wednesday"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp"
+                                    android:backgroundTint="@color/light_grey"
+                                    android:layout_marginEnd="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="We"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/white"
+                                        android:textAlignment="center"
+                                        android:fontFamily="sans-serif-smallcaps"
+                                        android:layout_gravity="center"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/thursday"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp"
+                                    android:backgroundTint="@color/light_grey"
+                                    android:layout_marginEnd="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Th"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/white"
+                                        android:textAlignment="center"
+                                        android:fontFamily="sans-serif-smallcaps"
+                                        android:layout_gravity="center"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/friday"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp"
+                                    android:backgroundTint="@color/light_grey"
+                                    android:layout_marginEnd="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Fr"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/white"
+                                        android:fontFamily="sans-serif-smallcaps"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/saturday"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp"
+                                    android:backgroundTint="@color/light_grey"
+                                    android:layout_marginEnd="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sa"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/white"
+                                        android:textAlignment="center"
+                                        android:fontFamily="sans-serif-smallcaps"
+                                        android:layout_gravity="center"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/sunday"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp"
+                                    android:backgroundTint="@color/light_grey">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Su"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/white"
+                                        android:textAlignment="center"
+                                        android:fontFamily="sans-serif-smallcaps"
+                                        android:layout_gravity="center"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/light_grey"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="55"
+                                    android:text="Irrigation start time"
+                                    android:textColor="@color/dark_card"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/irriStartTimeHour"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLength="2"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text=":"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/dark_card"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textSize="12sp" />
+
+                                <EditText
+                                    android:id="@+id/irriStartTimeMin"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLength="2"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="Hrs"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/dark_card"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/light_grey"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="75"
+                                    android:text="Irrigation time"
+                                    android:textColor="@color/dark_card"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/irriTime"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="15"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:maxLength="3"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="10"
+                                    android:text="Sec"
+                                    android:textAlignment="center"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:textColor="@color/dark_card"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/line6_b"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_grey"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/createNewSetButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="2dp"
+                app:cardElevation="5dp" >
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addingBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:src="@drawable/ic_add"
+                app:backgroundTint="?attr/colorControlNormal"
+                app:tint="@color/white"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

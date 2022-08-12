@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "17297790917",
+    "project_id": "indoor-65269",
+    "storage_bucket": "indoor-65269.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17297790917:android:5c5eb2c57ae661e9771dac",
+        "android_client_info": {
+          "package_name": "com.example.indoor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17297790917-5ho963l3989i4sba2ud2rj9khii7beus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgBopcR2kAzafFGZbE5ZT9VfVn6n8rp7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17297790917-5ho963l3989i4sba2ud2rj9khii7beus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

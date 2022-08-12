@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="15dp"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Information"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Substrate :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/substrate"
+                        android:text="-"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fertilizers :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/fertilizers"
+                        android:text="-"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pesticides / Common Pests :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/pesticides"
+                        android:text="-"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time before harvesting :"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_margin="6dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/harvestDays"
+                        android:text="-"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text=" Days / "
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/harvestMonths"
+                        android:text="-"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text=" Months / "
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/harvestYears"
+                        android:text="-"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="Years"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Temperature"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Temperature (day) :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/tempDayMin"
+                        android:text="min"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=" - "/>
+
+                    <TextView
+                        android:id="@+id/tempDayMax"
+                        android:text="max"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=" °C "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Temperature (night) :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/tempNightMin"
+                        android:text="min"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=" - "/>
+
+                    <TextView
+                        android:id="@+id/tempNightMax"
+                        android:text="max"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=" °C "/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Humidity"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Humidity (day) :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/humDayMin"
+                        android:text="min"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=" - "/>
+
+                    <TextView
+                        android:id="@+id/humDayMax"
+                        android:text="max"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=" °C "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Humidity (night) :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/humNightMin"
+                        android:text="min"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=" - "/>
+
+                    <TextView
+                        android:id="@+id/humNightMax"
+                        android:text="max"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=" °C "/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Photoperiod"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lights On :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/lightsOnHour"
+                        android:text="Hours"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=":"/>
+
+                    <TextView
+                        android:id="@+id/lightsOnMin"
+                        android:text="Minutes"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lights Off :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/lightsOffHour"
+                        android:text="Hours"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=":"/>
+
+                    <TextView
+                        android:id="@+id/lightsOffMin"
+                        android:text="Minutes"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Ventilation"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ventilation Timer :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/ventTimer"
+                        android:text="Ventilation Timer"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text="Min"/>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ventilation Intervals :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/ventInter"
+                        android:text="Intervals"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text="Min"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Irrigation"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/monday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="5dp"
+                        android:backgroundTint="@color/light_grey"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mo"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textAlignment="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tuesday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="5dp"
+                        android:backgroundTint="@color/light_grey"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tu"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textAlignment="center"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/wednesday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="5dp"
+                        android:backgroundTint="@color/light_grey"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="We"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/thursday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="5dp"
+                        android:backgroundTint="@color/light_grey"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Th"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/friday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="5dp"
+                        android:backgroundTint="@color/light_grey"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fr"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/saturday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="5dp"
+                        android:backgroundTint="@color/light_grey"
+                        android:layout_marginEnd="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sa"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sunday"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="5dp"
+                        android:backgroundTint="@color/light_grey">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Su"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Irrigation Starts at :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/irriStartsHour"
+                        android:text="-"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text=":"/>
+
+                    <TextView
+                        android:id="@+id/irriStartsMin"
+                        android:text="-"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Irrigation Timer :"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"/>
+                    <TextView
+                        android:id="@+id/irriTimer"
+                        android:text="-"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="6dp"
+                        android:text="Sec"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
